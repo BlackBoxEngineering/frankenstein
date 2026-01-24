@@ -235,6 +235,23 @@ def explain_what_this_shows():
 
 
 if __name__ == "__main__":
+    print("=" * 70)
+    print("FRANKENSTEIN - TINY GPT TRAINING DEMO")
+    print("=" * 70)
+    print()
+    print("This will train a tiny GPT model to show how LLMs learn patterns.")
+    print("It takes about 1-2 minutes on CPU.")
+    print()
+    
+    response = input("Do you want to train the model? (yes/no): ").strip().lower()
+    
+    if response not in ['yes', 'y']:
+        print("\nOkay! Run this script again when you're ready.")
+        print("\nWhat this would show:")
+        explain_what_this_shows()
+        exit(0)
+    
+    print()
     explain_what_this_shows()
     
     print("=" * 70)
